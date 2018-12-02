@@ -1,0 +1,12 @@
+@objects
+    forma 	css #login
+    box         css body
+    
+
+= Main section =
+    forma:
+    	centered vertically inside box
+  
+	
+    
+	

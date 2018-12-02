@@ -1,0 +1,35 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    cetvrtina   css .cetvrtina
+    prvi        css #prviDio
+    drugi       css #drugiDio
+    treci       css #treciDio
+    glavni	css #glavni
+    item        css .item
+    naslov      css #header h1
+
+= Main section =
+   cetvrtina:
+	width ~ 25% of glavni/width
+   prvi:
+	width ~ 25% of glavni/width
+   header:
+	contains partly logo, menu, naslov
+   glavni:	
+	contains cetvrtina, prvi, drugi, treci
+   prvi:
+	left-of drugi 0px
+   treci:
+	right-of drugi
+
+
+   @on mobile
+        prvi:
+            above drugi
+
+  
+	
+    
+	

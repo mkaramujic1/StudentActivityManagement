@@ -1,0 +1,37 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    formaP      css #firstSection form[name='fPojedinacni']
+    godina	css #firstSection select[name='godina']
+    ime         css #firstSection input[name='ime']
+    indeks      css #firstSection input[name='index']
+    email       css #firstSection input[name='email']
+    glavniS     css #glavniSadrzaj
+    body        css body
+    formaN      css #secondSection form[name='fMasovni']
+    lista       css #secondSection input[name='csv lista']
+    god         css #secondSection select[name='godina']
+    footer      css #footer
+
+= Main section =
+   glavniS:
+	width ~ 85% of body/width
+   glavniS:
+	centered horizontally inside body
+   formaP:
+	contains godina, ime, indeks, email
+   formaN:	
+	contains lista, god
+   formaP:
+	above formaN
+   footer:
+	width ~ 100% of body/width
+
+   @on mobile
+        glavniS: 
+	      width ~ 100% of body/width
+  
+	
+    
+	

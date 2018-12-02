@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/addStudent_stil.css">
+<title>Dodavanje studenata</title>
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="logo.png" alt="LOGO">
+		<div id="zamjena">
+			<h1>DODAVANJE STUDENTA</h1> 
+			<nav id="navigation">
+				<ul id="meni">
+		    		<li><a href="login.html">Login</a></li>
+		    		<li><a href="studenti.html">Pregled studenata</a></li>
+		    		<li><a href="zadaci.html">Pregled zadataka</a></li>
+		    		<li><a href="commiti.html">Pregled commita</a></li>
+		    		<li><a href="addGodina.html">Dodavanje godine</a></li>
+		    		<li><a href="addStudent.html">Dodavanje studenta</a></li>
+		    		<li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+		    		<li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+				</ul> 
+			</nav>	
+		</div>
+	</div>
+	<div id="glavniSadrzaj" class="resolution-size">
+			<section id="firstSection">
+			<form name="fPojedinacni" action="#" onsubmit="return false">
+				<h2>Pojedinačni unos</h2><br>
+				<label>Godina:</label><br>
+				<select name="godina" class="sirina">
+				  <option>2018/19</option>
+				  <option>2019/20</option>
+				  <option>2020/21</option>
+				</select><br><br>
+				<label>Ime i prezime</label><br>
+				<input type="text" name="ime" class="sirina" id="ime" required><br><br>
+				<label>Index</label><br>
+				<input type="number" name="index" class="sirina" id="index" required><br><br>
+				<label>Email</label><br>
+				<input type="email" name="email" class="sirina" required><br><br>
+				<input id="dodaj" type="submit" name="submit" value="Unesi" onclick="ucitaj('divPoruke', 'ime', 'index')"><br>
+				<div id="divPoruke"></div>
+			</form>
+		</section>
+		<section id="secondSection">
+			<form  name="fMasovni">
+				<h2>Masovni unos</h2><br>
+				<label>Godina:</label><br>
+				<select name="godina" class="sirina">
+				  <option>2018/19</option>
+				  <option>2019/20</option>
+				  <option>2020/21</option>
+				</select><br><br>
+				<label>CSV fajl</label><br>
+			    <input id="browse" type="file" name="csv lista" ><br><br><br>
+				<input type="submit" name="submit" value="Unesi"><br>
+			</form>
+		</section>
+	</div> 
+	<footer id="footer">
+  		<p>Web tehnologije 2018/19.</p>
+	</footer> 
+	<script type="text/javascript" src="../js/addStudent.js"></script>
+	<script type="text/javascript" src="../js/validacija.js"></script>
+</body>
+</html>

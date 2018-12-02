@@ -1,0 +1,30 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    side        css #side
+    glavni	css #glavni
+    glavniSad   css #glavniSadrzaj
+    naslov      css #header h1
+
+= Main section =
+   side:
+	width ~ 35% of glavni/width
+   glavniSad:
+	width ~ 65% of glavni/width
+   header:
+	contains partly logo, menu, naslov
+   glavni:	
+	contains side, glavniSad
+   side:
+	left-of glavniSad 0px
+   glavniSad:
+	right-of side
+
+   @on mobile
+        side:
+            above glavniSad
+  
+	
+    
+	

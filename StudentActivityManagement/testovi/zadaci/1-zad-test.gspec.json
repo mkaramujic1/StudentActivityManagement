@@ -1,0 +1,125 @@
+{
+  "testId" : "1-zad-test.gspec",
+  "name" : "zad_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  zad_test.gspec --url http://localhost/zadaci.html --size 1024x768 --htmlreport zadaci -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: zad_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541520933191,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "zad_test.gspec",
+              "lineNumber" : 13
+            },
+            "objects" : [ {
+              "name" : "cetvrtina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "width ~ 25% of glavni/width",
+                "highlight" : [ "cetvrtina" ]
+              } ]
+            }, {
+              "name" : "prvi",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "width ~ 25% of glavni/width",
+                "highlight" : [ "prvi" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "left-of drugi 0px",
+                "highlight" : [ "prvi", "drugi" ]
+              } ]
+            }, {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "contains partly logo, menu, naslov",
+                "highlight" : [ "header", "logo", "menu", "naslov" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "contains cetvrtina, prvi, drugi, treci",
+                "highlight" : [ "glavni", "cetvrtina", "prvi", "drugi", "treci" ]
+              } ]
+            }, {
+              "name" : "treci",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zad_test.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "right-of drugi",
+                "highlight" : [ "treci", "drugi" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "prvi" : {
+              "area" : [ 0, 214, 248, 613 ]
+            },
+            "naslov" : {
+              "area" : [ 745, 21, 249, 40 ]
+            },
+            "treci" : {
+              "area" : [ 497, 214, 497, 405 ]
+            },
+            "glavni" : {
+              "area" : [ 0, 198, 995, 716 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 995, 107 ]
+            },
+            "logo" : {
+              "area" : [ 0, 0, 92, 92 ]
+            },
+            "menu" : {
+              "area" : [ 0, 92, 995, 106 ]
+            },
+            "cetvrtina" : {
+              "area" : [ 0, 214, 248, 613 ]
+            },
+            "drugi" : {
+              "area" : [ 248, 214, 248, 651 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541520931782,
+        "type" : "node"
+      } ],
+      "time" : 1541520926221,
+      "type" : "node"
+    } ]
+  }
+}

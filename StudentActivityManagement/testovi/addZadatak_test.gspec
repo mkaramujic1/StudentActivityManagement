@@ -1,0 +1,24 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    glavni	css #glavniSadrzaj
+    naslov      css #header h1
+    footer      css #footer
+    noviZad     css #noviZadatak
+    body        css #body
+
+= Main section =
+   glavni:	
+	contains noviZad
+   glavni:
+        centered horizontally inside body
+   glavni:
+	width ~ 85% of body/width
+   footer:
+        width ~ 100% of body/width
+   
+  
+	
+    
+	

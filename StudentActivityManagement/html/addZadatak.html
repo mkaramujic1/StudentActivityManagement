@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/addZadatak_stil.css">
+<title>Dodavanje zadatka</title>
+</head>
+<body id="body">
+	<div id="header">
+		<img id="logo" src="logo.png" alt="LOGO">
+		<div id="zamjena">
+			<h1>DODAVANJE ZADATKA</h1> 
+			<nav id="navigation">
+				<ul id="meni">
+		    		<li><a href="login.html">Login</a></li>
+		    		<li><a href="studenti.html">Pregled studenata</a></li>
+		    		<li><a href="zadaci.html">Pregled zadataka</a></li>
+		    		<li><a href="commiti.html">Pregled commita</a></li>
+		    		<li><a href="addGodina.html">Dodavanje godine</a></li>
+		    		<li><a href="addStudent.html">Dodavanje studenta</a></li>
+		    		<li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+		    		<li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+				</ul> 
+			</nav>	
+		</div>
+	</div>
+	<div id="glavniSadrzaj" class="resolution-size">
+		<form action="#" onsubmit="return false" id="noviZadatak">
+			<h2>NOVI ZADATAK</h2><br>
+			<label>Naziv zadatka:</label><br>
+			<input type="text" name="naziv" class="sirina" id="naziv" required><br><br><br>
+			<label>Text postavke: *</label><br>
+			<input id="browse" type="file" name="postavka" ><br><br><br>
+			<label>Vjezbe/Spirale:</label><br>
+			<select class="sirina">
+			  <option>Vjezba X</option>
+			</select><br><br>
+			<input id="dodaj" type="submit" name="Dodaj" value="Dodaj" onclick="ucitaj('divPoruke', 'naziv')"><br>
+			<div id="divPoruke"></div>
+		</form>
+	</div>
+	<footer id="footer">
+  		<p>Web tehnologije 2018/19.</p>
+	</footer> 
+	<script type="text/javascript" src="../js/addZadatak.js"></script>
+	<script type="text/javascript" src="../js/validacija.js"></script>
+</body>
+</html>

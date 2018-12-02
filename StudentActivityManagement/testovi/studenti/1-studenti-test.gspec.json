@@ -1,0 +1,116 @@
+{
+  "testId" : "1-studenti-test.gspec",
+  "name" : "studenti_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  studenti_test.gspec --url http://localhost/studenti.html --size 1024x768 --htmlreport studenti -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: studenti_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541520441358,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "studenti_test.gspec",
+              "lineNumber" : 10
+            },
+            "objects" : [ {
+              "name" : "side",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "width ~ 35% of glavni/width",
+                "highlight" : [ "side" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "left-of glavniSad 0px",
+                "highlight" : [ "side", "glavniSad" ]
+              } ]
+            }, {
+              "name" : "glavniSad",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "width ~ 65% of glavni/width",
+                "highlight" : [ "glavniSad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "right-of side",
+                "highlight" : [ "glavniSad", "side" ]
+              } ]
+            }, {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "contains partly logo, menu, naslov",
+                "highlight" : [ "header", "logo", "menu", "naslov" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "studenti_test.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "contains side, glavniSad",
+                "highlight" : [ "glavni", "side", "glavniSad" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "side" : {
+              "area" : [ 0, 223, 354, 300 ]
+            },
+            "naslov" : {
+              "area" : [ 679, 21, 332, 40 ]
+            },
+            "glavni" : {
+              "area" : [ 0, 198, 1012, 385 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 1012, 107 ]
+            },
+            "logo" : {
+              "area" : [ 0, 0, 92, 92 ]
+            },
+            "menu" : {
+              "area" : [ 0, 92, 1012, 106 ]
+            },
+            "glavniSad" : {
+              "area" : [ 354, 198, 657, 385 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541520440023,
+        "type" : "node"
+      } ],
+      "time" : 1541520434441,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,36 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    formaP      css #firstSection form[name='fPostojeca']
+    godina	css #firstSection select[name='sGodine']
+    vjezbe      css #firstSection select[name='sVjezbe']
+    button1     css #firstSection input[name='submit']
+    glavniS     css #glavniSadrzaj
+    body        css body
+    formaN      css #secondSection form[name='fNova']
+    zadatak     css #secondSection select[name='sZadatak']
+    spirala     css #secondSection input[name='spirala']
+    footer      css #footer
+
+= Main section =
+   glavniS:
+	width ~ 85% of body/width
+   glavniS:
+	centered horizontally inside body
+   formaP:
+	contains vjezbe, godina, button1
+   formaN:	
+	contains zadatak, spirala
+   formaP:
+	above formaN
+   footer:
+	width ~ 100% of body/width
+
+   @on mobile
+        glavniS: 
+	      width ~ 100% of body/width
+  
+	
+    
+	

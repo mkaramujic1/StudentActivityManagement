@@ -1,0 +1,27 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    side        css #side
+    glavni      css #glavniSadrzaj
+    godina	css #side input[name='naziv']
+    footer      css #footer
+    body        css body
+
+= Main section =
+   glavni:
+	width ~ 65% of body/width
+   side:
+	width ~ 35% of body/width
+   side:
+	contains godina
+   side:	
+	left-of glavni
+   
+   @on mobile
+        glavni: 
+	      width ~ 100% of body/width
+  
+	
+    
+	

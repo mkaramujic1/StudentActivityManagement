@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/commiti_stil.css">
+<meta charset="UTF-8">
+<title>Pregled commita</title>
+</head>
+<body>
+
+<div id="header">
+	<img id="logo" src="logo.png" alt="LOGO">
+	<div id="zamjena">
+		<h1>PREGLED COMMITA</h1> 
+		<nav id="navigation">
+			<ul id="meni">
+	    		<li><a href="login.html">Login</a></li>
+	    		<li><a href="studenti.html">Pregled studenata</a></li>
+	    		<li><a href="zadaci.html">Pregled zadataka</a></li>
+	    		<li><a href="commiti.html">Pregled commita</a></li>
+	    		<li><a href="addGodina.html">Dodavanje godine</a></li>
+	    		<li><a href="addStudent.html">Dodavanje studenta</a></li>
+	    		<li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+	    		<li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+			</ul> 
+		</nav>	
+	</div>
+</div>
+
+<div id="glavni">
+	<div id="text">
+		<p>Student: Neko Nekić, 1234<br></p>
+		<p>Naziv vježbe/spirale: Vježba 1</p>
+		<p>Repozitorij: <a href="commiti.html">hyperlink</a></p>
+	</div>
+	<div id="forma">
+		<form action="#" onsubmit="return false" id="formaKreiraj">
+			<h3>KREIRAJ TABELU</h3><br>
+			<label>Broj zadataka:</label><br>
+			<input type="number" name="brZadataka" class="sirina" id="brZadataka" required><br><br><br><br><br><br><br><br><br><br>
+			<input id="kreiraj" type="submit" name="submit" value="Kreiraj tabelu" onclick="kreirajTabelu('commiti', 'brZadataka','divPoruke')"><br>
+			<div id="divPoruke"></div>
+		</form>
+		<form action="#" onsubmit="return false" id="formaDodaj">
+			<h3>DODAJ COMMIT</h3><br>
+			<label>Redni broj zadatka</label><br>
+			<input type="number" name="redniBrojZad" class="sirina" id="redniBrojZad" required><br><br>
+			<label>URL</label><br>
+			<input type="text" name="url" class="sirina" id="url" required><br><br><br><br><br><br>
+			<input id="dodaj" type="submit" name="submit" value="Dodaj commit" onclick="dodajCommit('divPoruke1','redniBrojZad', 'url')"><br>
+			<div id="divPoruke1"></div>
+		</form>
+		<form action="#" onsubmit="return false" id="formaObrisi">
+			<h3>OBRIŠI COMMIT</h3><br>
+			<label>Redni broj zadatka</label><br>
+			<input type="number" name="redniBrojZadatka" class="sirina" id="redniBrojZadatka" required><br><br>
+			<label>Redni broj commita</label><br>
+			<input type="number" name="redniBrojCommita" class="sirina" id="redniBrojCommita" required><br><br><br><br><br><br>
+			<input id="obrisi" type="submit" name="submit" value="Obriši commit" onclick="obrisiCommit('divPoruke2','redniBrojZadatka', 'redniBrojCommita')"><br>
+			<div id="divPoruke2"></div>
+		</form>
+		<form action="#" onsubmit="return false" id="formaEdituj">
+			<h3>EDITUJ COMMIT</h3><br>
+			<label>Redni broj zadatka</label><br>
+			<input type="number" name="redniBrojZadatka" class="sirina" id="redniBrojZadatkaE" required><br><br>
+			<label>Redni broj commita</label><br>
+			<input type="number" name="redniBrojCommita" class="sirina" id="redniBrojCommitaE" required><br><br>
+			<label>URL</label><br>
+			<input type="text" name="url" class="sirina" id="urlE" required><br><br>
+			<input id="edituj" type="submit" name="submit" value="Edituj commit" onclick="editujCommit('divPoruke3','redniBrojZadatkaE', 'redniBrojCommitaE', 'urlE')"><br>
+			<div id="divPoruke3"></div>
+		</form>
+	</div>
+	<br><br>
+	<div id="commiti"></div>
+</div>
+
+<footer id="footer">
+  <p>Web tehnologije 2018/19.</p>
+</footer>
+<script src="../js/committabela.js"></script>
+<script src="../js/commiti.js"></script>
+<script src="../js/validacija.js"></script>
+</body>
+</html>

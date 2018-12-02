@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/addGodina_stil.css">
+<title>Dodavanje godine</title>
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="logo.png" alt="LOGO">
+		<div id="zamjena">
+			<h1>DODAVANJE GODINE</h1> 
+			<nav id="navigation">
+				<ul id="meni">
+		    		<li><a href="login.html">Login</a></li>
+		    		<li><a href="studenti.html">Pregled studenata</a></li>
+		    		<li><a href="zadaci.html">Pregled zadataka</a></li>
+		    		<li><a href="commiti.html">Pregled commita</a></li>
+		    		<li><a href="addGodina.html">Dodavanje godine</a></li>
+		    		<li><a href="addStudent.html">Dodavanje studenta</a></li>
+		    		<li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+		    		<li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+				</ul> 
+			</nav>	
+		</div>
+	</div>
+
+	<div class="col-container">
+		<div id="wrapper1" class="col">
+		    <div id="side" >
+		  		<form  action="#" onsubmit="return false" name="fMasovni">
+					<h2>Unos godine</h2><br>
+					<label>Naziv godine</label><br>
+					<input type="text" name="naziv" class="sirina" id="godina" required><br><br><br>
+					<label>Nazivi repozitorija vježbe</label><br>
+					<input type="text" name="rvjezbe" class="sirina" id="rep1" required><br><br><br>
+					<label>Nazivi repozitorija spirale</label><br>
+					<input type="text" name="rspiral" class="sirina" id="rep2" required><br><br><br>
+					<input type="button" name="ponisti" value="Poništi">
+					<input type="submit" name="unesi" value="Unesi" onclick="ucitaj('divPoruke', 'godina', 'rep1', 'rep2')">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</form>
+				<div id="divPoruke"></div>
+		  	</div>
+		  </div>
+		  <div id="wrapper2" class="col">
+	  		<div id="glavniSadrzaj">
+		  		<table>
+		  			<tr>
+		  				<td>
+					  		<div class="godine">
+					  			<p>2015/16</p>
+					  			<p>Broj studenata: 90</p>
+					  			<p>Broj vježbi: 10</p>
+					  			<p>Broj spitala:4</p>
+							</div></td>
+						<td>
+							<div class="godine">
+					  			<p>2015/16</p>
+					  			<p>Broj studenata: 90</p>
+					  			<p>Broj vježbi: 10</p>
+					  			<p>Broj spitala:4</p>
+							</div></td>
+					</tr>
+					<tr>
+		  				<td>
+					  		<div class="godine">
+					  			<p>2015/16</p>
+					  			<p>Broj studenata: 90</p>
+					  			<p>Broj vježbi: 10</p>
+					  			<p>Broj spitala:4</p>
+							</div></td>
+						<td>
+							<div class="godine">
+					  			<p>2015/16</p>
+					  			<p>Broj studenata: 90</p>
+					  			<p>Broj vježbi: 10</p>
+					  			<p>Broj spitala:4</p>
+							</div></td>
+					</tr>
+				</table>
+			</div>
+	  	</div>
+    </div>
+	<footer id="footer">
+  		<p>Web tehnologije 2018/19.</p>
+	</footer> 
+<script type="text/javascript" src="../js/addGodina.js"></script>
+<script type="text/javascript" src="../js/validacija.js"></script>
+
+</body>
+</html>

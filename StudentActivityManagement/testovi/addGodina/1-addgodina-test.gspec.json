@@ -1,0 +1,82 @@
+{
+  "testId" : "1-addgodina-test.gspec",
+  "name" : "addGodina_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addGodina_test.gspec --url http://localhost/addGodina.html --size 1024x768 --htmlreport addGodina -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addGodina_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541521255422,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "addGodina_test.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addGodina_test.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "width ~ 65% of body/width",
+                "highlight" : [ "glavni" ]
+              } ]
+            }, {
+              "name" : "side",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addGodina_test.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "width ~ 35% of body/width",
+                "highlight" : [ "side" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addGodina_test.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "contains godina",
+                "highlight" : [ "side", "godina" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addGodina_test.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "left-of glavni",
+                "highlight" : [ "side", "glavni" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "side" : {
+              "area" : [ 0, 389, 348, 621 ]
+            },
+            "glavni" : {
+              "area" : [ 348, 198, 646, 490 ]
+            },
+            "godina" : {
+              "area" : [ 34, 481, 187, 22 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541521254325,
+        "type" : "node"
+      } ],
+      "time" : 1541521247943,
+      "type" : "node"
+    } ]
+  }
+}

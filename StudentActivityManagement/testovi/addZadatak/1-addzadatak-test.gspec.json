@@ -1,0 +1,85 @@
+{
+  "testId" : "1-addzadatak-test.gspec",
+  "name" : "addZadatak_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addZadatak_test.gspec --url http://localhost/addZadatak.html --size 1024x768 --htmlreport addZadatak -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addZadatak_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541521048949,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "addZadatak_test.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak_test.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "contains noviZad",
+                "highlight" : [ "glavni", "noviZad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak_test.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "centered horizontally inside body",
+                "highlight" : [ "glavni", "body" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak_test.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "width ~ 85% of body/width",
+                "highlight" : [ "glavni" ]
+              } ]
+            }, {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addZadatak_test.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "width ~ 100% of body/width",
+                "highlight" : [ "footer" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "footer" : {
+              "area" : [ 0, 708, 995, 60 ]
+            },
+            "glavni" : {
+              "area" : [ 74, 198, 845, 510 ]
+            },
+            "body" : {
+              "area" : [ 0, 0, 995, 768 ]
+            },
+            "noviZad" : {
+              "area" : [ 352, 258, 290, 390 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541521047937,
+        "type" : "node"
+      } ],
+      "time" : 1541521041755,
+      "type" : "node"
+    } ]
+  }
+}

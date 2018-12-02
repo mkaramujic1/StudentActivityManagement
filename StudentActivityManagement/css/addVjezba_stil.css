@@ -1,0 +1,151 @@
+body{
+     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;    
+     margin:0px;
+     padding:0;
+     height:100%; 
+     min-height:100%;
+     position:relative;
+     box-sizing: border-box;
+}
+    #header{
+        box-sizing: border-box;
+        text-align: right;
+        height: 107px;
+    }
+        #logo{
+            padding: 16px;
+            height: 60px;
+            width: 60px;
+            float: left;
+        }
+        #header h1{
+            float:right;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            padding-right: 16px;
+        }
+        #meni{
+            list-style-type:none;
+            float: left;
+            width: 100%;
+            padding-left: 0px;
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+            #meni li {
+                float: left;
+            }
+                #meni li a {
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                }
+                #meni li a:hover {
+                    background-color: #28626D;
+                    color:white;
+                }
+    #glavniSadrzaj{
+        display: table;
+        padding-top:16px;
+        padding-bottom: 16px;
+        background-color: #28626D;
+        width: 85%;
+        margin:auto;
+        box-sizing: border-box;
+        min-height: 600px;
+    }
+            form{
+                width: 40%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom:2px solid white;
+                border-top: 2px solid white;
+                margin:auto;
+                color: white;
+                box-sizing: border-box;
+            }
+                form h2{
+                    text-align: center;
+                }
+                .sirina{
+                    width: 40%;
+                }
+                
+                [name="sZadatak"]{
+                    float: left;
+
+                }
+                [name="dZadatak"]{
+                    float: right;
+                    margin: 0;
+                }
+                [value="Dodaj"]{
+                    float:right;
+                    margin:0;
+                    width: 100px;
+                }
+                #dodaj2{
+                    margin-top: -20px;
+                }
+                [name="submit"]{
+                    float:right;
+                }
+                [type="checkbox"]{
+                    float:left;
+                }
+                #listaZadataka{
+                    text-align: left;
+                }
+    #footer{
+       left: 0;
+       background-color: black;
+       color: white;
+       text-align: center;
+       clear: both;
+       height: 40px;
+       padding: 10px;
+       bottom: 0%;
+       margin-bottom: 0px;
+    }
+@media only screen and (max-width: 600px) {
+    body{
+        font-size:15px;
+    }
+    #header{
+        text-align: left;
+        height: 470px;
+    }
+    #zamjena   { 
+        display: table; 
+    }
+    #zamjena h1 { 
+        text-align: left;
+        float: left;
+        display: table-footer-group; 
+        margin-bottom: 10px;
+        padding-top: 10px;
+        font-size:20px;
+        /*padding-left: 15px;*/
+    }
+    #meni li a{
+        text-align: left;
+    }
+    #navigation { 
+        width: 100%;
+        display: table-header-group; 
+    }
+    #navigation ul li{
+        width: 100%;
+        vertical-align: top;
+        float: left;
+    }
+    #glavniSadrzaj{
+        width: 100%;
+    }
+    h2{
+        width: 90%;
+        font-size: 15px;
+    }
+    
+}

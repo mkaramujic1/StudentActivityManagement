@@ -1,0 +1,52 @@
+{
+  "testId" : "1-login-test.gspec",
+  "name" : "login_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  login_test.gspec --url http://localhost/login.html --size 1024x768 --htmlreport login -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: login_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541520314503,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "login_test.gspec",
+              "lineNumber" : 6
+            },
+            "objects" : [ {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "login_test.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "centered vertically inside box",
+                "highlight" : [ "forma", "box" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "box" : {
+              "area" : [ 0, 0, 1012, 687 ]
+            },
+            "forma" : {
+              "area" : [ 306, 193, 400, 300 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541520313724,
+        "type" : "node"
+      } ],
+      "time" : 1541520308624,
+      "type" : "node"
+    } ]
+  }
+}

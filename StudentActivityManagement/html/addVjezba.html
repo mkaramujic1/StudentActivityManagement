@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/addVjezba_stil.css">
+<title>Dodavanje vježbe/spirale</title>
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="logo.png" alt="LOGO">
+		<div id="zamjena">
+			<h1>DODAVANJE VJEŽBE/SPIRALE</h1> 
+			<nav id="navigation">
+				<ul id="meni">
+		    		<li><a href="login.html">Login</a></li>
+		    		<li><a href="studenti.html">Pregled studenata</a></li>
+		    		<li><a href="zadaci.html">Pregled zadataka</a></li>
+		    		<li><a href="commiti.html">Pregled commita</a></li>
+		    		<li><a href="addGodina.html">Dodavanje godine</a></li>
+		    		<li><a href="addStudent.html">Dodavanje studenta</a></li>
+		    		<li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+		    		<li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+				</ul> 
+			</nav>	
+		</div>
+	</div>
+	<div id="glavniSadrzaj">
+			<section id="firstSection">
+			<form name="fPostojeca">
+				<h2>Dodavanje postojeće vježbe/spirale</h2><br>
+				<label>Godina:</label><br>
+				<select name="sGodine" class="sirina">
+				  <option>2018/19</option>
+				  <option>2019/20</option>
+				  <option>2020/21</option>
+				</select><br><br>
+				<label>Vježbe/Spirale:</label><br>
+				<select class="sirina" name="sVjezbe">
+				  <option>Vjezba X</option>
+				</select><br><br>
+				<input id="dodaj" type="submit" name="submit" value="Dodaj"><br>
+			</form>
+		</section>
+		<section id="secondSection">
+			<form  action="#" onsubmit="return false" name="fNova">
+				<h2>Nova vježba/spirala</h2><br>
+				<label>Naziv vježbe:</label><br>
+				<input type="text" name="naziv" class="sirina" id="naziv"required><br><br>
+				<label>Godina:</label><br>
+				<select name="sGodine" class="sirina">
+				  <option>2018/19</option>
+				  <option>2019/20</option>
+				  <option>2020/21</option>
+				</select><br><br>
+				<textarea rows="4" cols="50" class="sirina">Zadatak1&#13;&#10;Zadatak2&#13;&#10;Zadatak3</textarea><br><br>
+				<select class="sirina" name="sZadatak">
+				  <option>Zadatak X</option>
+				</select>
+				<input type="button" name="dZadatak" value="Dodaj zadatak"><br><br>
+				<input type="checkbox" name="spirala">Spirala<br>
+				<input type="submit" name="submit" value="Dodaj" id="dodaj2" onclick="ucitaj('divPoruke', 'naziv')"><br>
+				<div id="divPoruke"></div>
+			</form>
+		</section>
+	</div> 
+	<footer id="footer">
+  		<p>Web tehnologije 2018/19.</p>
+	</footer> 
+
+<script type="text/javascript" src="../js/addVjezba.js"></script>
+<script type="text/javascript" src="../js/validacija.js"></script>
+</body>
+</html>

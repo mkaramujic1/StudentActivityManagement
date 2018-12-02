@@ -1,0 +1,58 @@
+#header{
+    text-align: right;
+}
+ /*div header*/
+ #header h1{
+    float:right;
+    margin: 0;
+    margin-top:-5%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+ /*Slika LOGO*/
+#logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+ /*lista id="meni" u headeru*/
+#meni{
+    list-style-type:none;
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+/*div u kojem se nalazi lista sa id-em "meni"*/
+
+#meni li {
+    float: left;
+}
+#meni li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+#meni li a:hover {
+    background-color: #28626D;
+    color:white;
+}
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+	#header h1{
+		width: 100%;
+        margin: 10px;
+	}
+	#header{
+		text-align: center;
+	}
+    #navigation{
+        float: right;
+    }
+	#navigation ul li{
+        width: 100%;
+        vertical-align: top;
+    }
+}

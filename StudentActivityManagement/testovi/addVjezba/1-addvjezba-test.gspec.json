@@ -1,0 +1,125 @@
+{
+  "testId" : "1-addvjezba-test.gspec",
+  "name" : "addVjezba_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  addVjezba_test.gspec --url http://localhost/addVjezba.html --size 1024x768 --htmlreport addVjezba -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: addVjezba_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541521095439,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "addVjezba_test.gspec",
+              "lineNumber" : 16
+            },
+            "objects" : [ {
+              "name" : "glavniS",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width ~ 85% of body/width",
+                "highlight" : [ "glavniS" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "centered horizontally inside body",
+                "highlight" : [ "glavniS", "body" ]
+              } ]
+            }, {
+              "name" : "formaP",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "contains vjezbe, godina, button1",
+                "highlight" : [ "formaP", "vjezbe", "godina", "button1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "above formaN",
+                "highlight" : [ "formaP", "formaN" ]
+              } ]
+            }, {
+              "name" : "formaN",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "contains zadatak, spirala",
+                "highlight" : [ "formaN", "zadatak", "spirala" ]
+              } ]
+            }, {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "addVjezba_test.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "width ~ 100% of body/width",
+                "highlight" : [ "footer" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "glavniS" : {
+              "area" : [ 74, 198, 845, 798 ]
+            },
+            "footer" : {
+              "area" : [ 0, 996, 995, 60 ]
+            },
+            "zadatak" : {
+              "area" : [ 328, 874, 135, 20 ]
+            },
+            "spirala" : {
+              "area" : [ 332, 919, 13, 13 ]
+            },
+            "body" : {
+              "area" : [ 0, 0, 995, 1056 ]
+            },
+            "formaP" : {
+              "area" : [ 328, 214, 338, 312 ]
+            },
+            "vjezbe" : {
+              "area" : [ 328, 442, 135, 20 ]
+            },
+            "button1" : {
+              "area" : [ 566, 483, 100, 22 ]
+            },
+            "godina" : {
+              "area" : [ 328, 379, 135, 20 ]
+            },
+            "formaN" : {
+              "area" : [ 328, 526, 338, 453 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541521094010,
+        "type" : "node"
+      } ],
+      "time" : 1541521087815,
+      "type" : "node"
+    } ]
+  }
+}

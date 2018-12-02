@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "zad_test.gspec",
+    "startedAt" : 1541520926217,
+    "endedAt" : 1541520934289,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 6,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 6
+    },
+    "testId" : "1-zad-test.gspec",
+    "duration" : 8072,
+    "failed" : false
+  } ]
+}

@@ -1,0 +1,21 @@
+@objects
+    header 	css #header
+    logo        css #logo
+    menu        css #meni
+    glavni	css #glavni
+    naslov      css #header h1
+    commiti     css #commiti
+    footer      css #footer
+
+= Main section =
+   header:
+	contains partly logo, menu, naslov
+   glavni:	
+	contains commiti
+   glavni:
+	above footer
+   
+  
+	
+    
+	

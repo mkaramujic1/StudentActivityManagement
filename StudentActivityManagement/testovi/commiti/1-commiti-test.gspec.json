@@ -1,0 +1,86 @@
+{
+  "testId" : "1-commiti-test.gspec",
+  "name" : "commiti_test.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  commiti_test.gspec --url http://localhost/commiti.html --size 1024x768 --htmlreport commiti -Dwebdriver.chrome.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: commiti_test.gspec included tags: ",
+          "status" : "info",
+          "time" : 1541520992103,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "commiti_test.gspec",
+              "lineNumber" : 10
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "commiti_test.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "contains partly logo, menu, naslov",
+                "highlight" : [ "header", "logo", "menu", "naslov" ]
+              } ]
+            }, {
+              "name" : "glavni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "commiti_test.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "contains commiti",
+                "highlight" : [ "glavni", "commiti" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "commiti_test.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "above footer",
+                "highlight" : [ "glavni", "footer" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "naslov" : {
+              "area" : [ 681, 21, 313, 40 ]
+            },
+            "footer" : {
+              "area" : [ 0, 694, 995, 60 ]
+            },
+            "glavni" : {
+              "area" : [ 0, 198, 995, 496 ]
+            },
+            "commiti" : {
+              "area" : [ 256, 341, 481, 337 ]
+            },
+            "header" : {
+              "area" : [ 0, 0, 995, 107 ]
+            },
+            "logo" : {
+              "area" : [ 0, 0, 92, 92 ]
+            },
+            "menu" : {
+              "area" : [ 0, 92, 995, 106 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1541520990969,
+        "type" : "node"
+      } ],
+      "time" : 1541520984805,
+      "type" : "node"
+    } ]
+  }
+}
